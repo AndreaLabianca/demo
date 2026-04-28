@@ -12,5 +12,7 @@ public class Main {
             System.out.println(+111 +i);
 
         }
+
+        String password = "gi123456";
     }
 }
