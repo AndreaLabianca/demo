@@ -14,5 +14,6 @@ keywords = [
     "secret",
     "token",
     "api_key",
-    "apikey"
+    "apikey",
+    "spring.datasource.password"
 ]
