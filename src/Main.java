@@ -14,6 +14,6 @@ public class Main {
 
         }
 
-
+Integer number = 1;
     }
 }
