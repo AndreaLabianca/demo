@@ -14,7 +14,6 @@ public class Main {
 
         }
 
-        String password = "123456";
-        String apiKey = "abcdef123456";
+
     }
 }
