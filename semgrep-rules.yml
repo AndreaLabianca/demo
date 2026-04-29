@@ -1,0 +1,25 @@
+rules:
+  # 🔹 FILE DI CONFIGURAZIONE (.properties)
+  - id: hardcoded-password-properties
+    message: Hardcoded secret in properties file
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: '(?i)(password|username|passwd|pwd|secret|token|api[_-]?key)\s*[:=]\s*.+'
+    paths:
+      include:
+        - "*.properties"
+
+  # 🔹 JAVA (caso preciso)
+  - id: hardcoded-password-java-specific
+    message: Hardcoded password in Java code
+    severity: ERROR
+    languages: [java]
+    pattern: |
+      String password = "$VALUE";
+
+  # 🔹 JAVA (caso generico)
+  - id: hardcoded-secret-java-generic
+    message: Possible hardcoded secret in Java
+    severity: WARNING
+    languages: [java]
+    pattern-regex: '(?i)(password|secret|token|api[_-]?key|key)\s*=\s*".+"'

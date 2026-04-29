@@ -13,5 +13,8 @@ public class Main {
             System.out.println(+111 +i);
 
         }
+
+        String password = "123456";
+        String apiKey = "abcdef123456";
     }
 }
